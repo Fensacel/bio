@@ -20,7 +20,7 @@ export interface Profile {
 const profile: Profile = {
   name: "Fachri",
   bio: "Web Developer & Creator",
-  avatar: "/avatar.svg",
+  avatar: "/avatar.jpg",
   links: [
     { title: "Portfolio", url: "https://mfchmufid.my.id", icon: "globe" },
     {
@@ -31,12 +31,12 @@ const profile: Profile = {
     { title: "TikTok", url: "https://tiktok.com/@mfchmf", icon: "tiktok" },
     {
       title: "YouTube",
-      url: "https://youtube.com/@mfchmufid",
+      url: "https://youtube.com/@pacriover",
       icon: "youtube",
     },
     {
       title: "Contact WhatsApp",
-      url: "https://wa.me/6281234567890",
+      url: "https://wa.me/6285293467109",
       icon: "whatsapp",
     },
     { title: "Tako", url: "https://tako.id/Archielole", icon: "link" },
