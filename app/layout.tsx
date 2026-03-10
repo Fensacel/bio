@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Fachri — Links",
   description:
     "Web Developer & Creator — All my links in one place.",
+  icons: {
+    icon: "/logo.png",
+  },
   openGraph: {
     title: "Fachri — Links",
     description: "Web Developer & Creator — All my links in one place.",
