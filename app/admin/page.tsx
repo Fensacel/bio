@@ -61,11 +61,11 @@ export default function AdminPage() {
   };
 
   return (
-    <div className="flex min-h-dvh items-start justify-center bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 px-4 py-12 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <div className="flex min-h-dvh items-start justify-center bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 px-4 py-12 dark:from-gray-950 dark:via-slate-900 dark:to-gray-950">
       <main className="w-full max-w-lg">
         <div className="rounded-2xl bg-white/80 p-6 shadow-xl backdrop-blur-sm dark:bg-gray-900/80">
           <div className="mb-6 flex items-center gap-3">
-            <PencilIcon className="h-6 w-6 text-purple-600" />
+            <PencilIcon className="h-6 w-6 text-blue-600" />
             <h1 className="text-xl font-bold text-gray-900 dark:text-white">
               Admin — Edit Profile
             </h1>
@@ -82,7 +82,7 @@ export default function AdminPage() {
                 onChange={(e) =>
                   setData((p) => ({ ...p, name: e.target.value }))
                 }
-                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
               />
             </div>
             <div>
@@ -94,7 +94,7 @@ export default function AdminPage() {
                 onChange={(e) =>
                   setData((p) => ({ ...p, bio: e.target.value }))
                 }
-                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
               />
             </div>
             <div>
@@ -106,7 +106,7 @@ export default function AdminPage() {
                 onChange={(e) =>
                   setData((p) => ({ ...p, avatar: e.target.value }))
                 }
-                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
               />
             </div>
           </div>
@@ -137,18 +137,18 @@ export default function AdminPage() {
                     placeholder="Title"
                     value={link.title}
                     onChange={(e) => updateLink(i, "title", e.target.value)}
-                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                   />
                   <input
                     placeholder="URL"
                     value={link.url}
                     onChange={(e) => updateLink(i, "url", e.target.value)}
-                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                   />
                   <select
                     value={link.icon || "link"}
                     onChange={(e) => updateLink(i, "icon", e.target.value)}
-                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                   >
                     <option value="link">Link</option>
                     <option value="globe">Globe</option>
@@ -165,7 +165,7 @@ export default function AdminPage() {
 
           <button
             onClick={addLink}
-            className="mb-6 w-full rounded-lg border-2 border-dashed border-gray-300 py-2 text-sm font-medium text-gray-500 transition-colors hover:border-purple-400 hover:text-purple-600 dark:border-gray-600 dark:text-gray-400 dark:hover:border-purple-500 dark:hover:text-purple-400"
+            className="mb-6 w-full rounded-lg border-2 border-dashed border-gray-300 py-2 text-sm font-medium text-gray-500 transition-colors hover:border-blue-400 hover:text-blue-600 dark:border-gray-600 dark:text-gray-400 dark:hover:border-blue-500 dark:hover:text-blue-400"
           >
             + Add Link
           </button>
@@ -174,7 +174,7 @@ export default function AdminPage() {
           <div className="flex gap-3">
             <button
               onClick={save}
-              className="flex-1 rounded-lg bg-purple-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-purple-700"
+              className="flex-1 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
             >
               {saved ? "✓ Saved!" : "Save to LocalStorage"}
             </button>

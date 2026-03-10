@@ -23,7 +23,7 @@ export default function HomeClient({ fallback }: { fallback: Profile }) {
   }, []);
 
   return (
-    <div className="flex min-h-dvh items-start justify-center bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 px-4 py-12 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <div className="flex min-h-dvh items-start justify-center bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 px-4 py-12 dark:from-gray-950 dark:via-slate-900 dark:to-gray-950">
       <main className="w-full max-w-md">
         <div className="flex flex-col items-center gap-8 animate-fade-in-up">
           <ProfileHeader profile={data} />

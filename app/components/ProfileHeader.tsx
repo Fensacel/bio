@@ -4,7 +4,7 @@ import type { Profile } from "../data/profile";
 export default function ProfileHeader({ profile }: { profile: Profile }) {
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-white/50 shadow-xl dark:ring-gray-700/50">
+      <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-blue-200/60 shadow-xl shadow-blue-500/10 dark:ring-blue-900/40 dark:shadow-blue-500/5">
         <Image
           src={profile.avatar}
           alt={profile.name}
